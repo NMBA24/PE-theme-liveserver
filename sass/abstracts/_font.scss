@@ -1,0 +1,32 @@
+$font-system: (
+  family: (
+    B: 'Barlow',
+    B-C: 'Barlow Condensed',
+    B-SC: 'Barlow Semi Condensed',
+  ),
+  weight: (
+    light : 300,
+    regular : 400,
+    medium : 500,
+    semibold : 600,
+    bold : 700
+  )
+);
+@mixin font($f-weight: regular, $f-family: B){
+  $family : map-get(map-get($font-system, family), $f-family);
+  $weight : map-get(map-get($font-system, weight), $f-weight);
+  font-family: $family;
+  font-weight: $weight;
+}
+// Useage example 
+// @include font(bold); 
+// @include font(bold, B-SC);
+// 4. Barlow Light fw: 300  : @include font(light);
+// 1. Barlow Medium fw:500   @include font(medium);
+// 6. Barlow Regular fw: 400  @include font(regular);
+// 7. Barlow SemiBold fw : 600  @include font(semibold);
+
+// 5. Barlow Condensed Medium fw500 @include font(medium, B-C);
+
+// 2. Barlow Semi Condensed fw600 @include font(semibold, B-SC);
+// 3. Barlow Semi Condensed fw300 @include font(light, B-SC);

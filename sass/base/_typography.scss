@@ -1,0 +1,18 @@
+html {
+  // This defines what 1rem is
+  font-size: 16px;
+  // @media only screen and (max-width: $bp-smallfont) {
+  //   font-size: 14px;
+  // }
+}
+body {
+  @include font(regular, B-SC);
+  line-height: 1.5;
+}
+p{
+  // font-family: "Barlow Condensed";
+  @include font(light, B-C);
+}
+a{
+  font-family: "Barlow Semi Condensed";
+}
