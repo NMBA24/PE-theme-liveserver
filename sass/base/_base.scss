@@ -5,4 +5,18 @@
     padding: 0;
     box-sizing: inherit;
 }
+body{
+  box-sizing: border-box;
+  background-color: $c-bg-basic;
+  color:$c-f-black;
+  font-size:$fs-d-normal;
+}
 
+.container {
+  max-width:1140px;
+  margin:auto;
+
+}
+img{
+  width: 100%;
+}

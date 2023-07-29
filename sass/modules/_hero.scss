@@ -1,0 +1,22 @@
+.hero{
+  h1{
+    line-height: 1.2;
+    @include font(inherit, B-SC);
+  }
+
+  p{
+    @include font(light, B);
+  }
+  
+  .container{
+    @include flex(row, unset);
+    justify-content: space-between;
+    .content-wrapper{
+      width: 55%;
+    }
+    .picture-wrapper{
+      width:30%;
+    }
+  }
+
+}

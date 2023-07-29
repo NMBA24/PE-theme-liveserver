@@ -9,10 +9,11 @@ $font-system: (
     regular : 400,
     medium : 500,
     semibold : 600,
-    bold : 700
+    bold : 700, 
+    inherit : inherit,
   )
 );
-@mixin font($f-weight: regular, $f-family: B){
+@mixin font($f-weight: inherit, $f-family: B){
   $family : map-get(map-get($font-system, family), $f-family);
   $weight : map-get(map-get($font-system, weight), $f-weight);
   font-family: $family;
@@ -30,3 +31,22 @@ $font-system: (
 
 // 2. Barlow Semi Condensed fw600 @include font(semibold, B-SC);
 // 3. Barlow Semi Condensed fw300 @include font(light, B-SC);
+
+@each $label, $value in map-get($font-system, weight){
+  .t-#{$label}{
+    font-weight: $value;
+  }
+}
+
+
+// font-size -- desktop -big/-normal/-small
+$fs-d-big: 48px;
+$fs-d-normal: 21px;
+$fs-d-small: 18px;
+// font-size -- desktop -big/-normal/-small
+
+$font-size : (
+  desktop-big : 48px,
+  desktop-normal: 21px,
+  desktop-small:18px
+);

@@ -6,13 +6,11 @@ html {
   // }
 }
 body {
-  @include font(regular, B-SC);
-  line-height: 1.5;
+  font-family:'Barlow';
 }
-p{
-  // font-family: "Barlow Condensed";
-  @include font(light, B-C);
-}
-a{
-  font-family: "Barlow Semi Condensed";
+
+
+
+h1{
+  font-size:48px;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* barlow-100 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -430,6 +431,30 @@
   font-weight: 900;
   src: url("../asset/fonts/barlow-semi-condensed-v15-latin/barlow-semi-condensed-v15-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+.t-light {
+  font-weight: 300;
+}
+
+.t-regular {
+  font-weight: 400;
+}
+
+.t-medium {
+  font-weight: 500;
+}
+
+.t-semibold {
+  font-weight: 600;
+}
+
+.t-bold {
+  font-weight: 700;
+}
+
+.t-inherit {
+  font-weight: inherit;
+}
+
 *,
 *::after,
 *::before {
@@ -438,23 +463,82 @@
   box-sizing: inherit;
 }
 
+body {
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+  color: #3C3C3C;
+  font-size: 21px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Barlow Semi Condensed";
-  font-weight: 400;
-  line-height: 1.5;
+  font-family: "Barlow";
 }
 
-p {
-  font-family: "Barlow Condensed";
+h1 {
+  font-size: 48px;
+}
+
+.btn {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Barlow";
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.7em 2.5em;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  background: #F6F6F6;
+  background-clip: padding-box; /* !importanté */
+  border: solid 2px transparent; /* !importanté */
+  border-radius: 15px;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(200deg, #E05976, #9A60C2);
+}
+
+.hero h1 {
+  line-height: 1.2;
+  font-family: "Barlow Semi Condensed";
+  font-weight: inherit;
+}
+.hero p {
+  font-family: "Barlow";
   font-weight: 300;
 }
-
-a {
-  font-family: "Barlow Semi Condensed";
+.hero .container {
+  display: flex;
+  flex-direction: row;
+  column-gap: unset;
+  justify-content: space-between;
+}
+.hero .container .content-wrapper {
+  width: 55%;
+}
+.hero .container .picture-wrapper {
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */

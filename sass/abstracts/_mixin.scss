@@ -1,0 +1,38 @@
+@mixin flex($dir, $gap: unset) {
+  display: flex;
+  flex-direction: $dir;
+  @if $dir == column {
+    row-gap: $gap;
+  } @else if $dir == row {
+    column-gap: $gap;
+  }
+}
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin gradient-border($bg-color:inherit){
+
+  position: relative;
+  box-sizing: border-box;
+
+  $border: 2px;
+  background: $bg-color;
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+  border-radius: 15px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    
+    background: linear-gradient(200deg,#E05976, #9A60C2);
+  }
+
+}

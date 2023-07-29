@@ -5,8 +5,14 @@ $font-path : '../asset/fonts';
 @import '../asset/fonts/barlow-semi-condensed-v15-latin/index'; //Barlow
 // Font variable
 @import 'abstracts/font';
-
 @import 'abstracts/colors';
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
+
 
 @import 'base/base';
 @import 'base/typography';
+
+@import 'components/buttons';
+
+@import 'modules/hero';
