@@ -431,28 +431,75 @@
   font-weight: 900;
   src: url("../asset/fonts/barlow-semi-condensed-v15-latin/barlow-semi-condensed-v15-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-.t-light {
+.fw-light {
   font-weight: 300;
 }
 
-.t-regular {
+.fw-regular {
   font-weight: 400;
 }
 
-.t-medium {
+.fw-medium {
   font-weight: 500;
 }
 
-.t-semibold {
+.fw-semibold {
   font-weight: 600;
 }
 
-.t-bold {
+.fw-bold {
   font-weight: 700;
 }
 
-.t-inherit {
+.fw-inherit {
   font-weight: inherit;
+}
+
+.fs-d-big {
+  font-size: 48px;
+}
+
+.fs-d-normal {
+  font-size: 21px;
+}
+
+.fs-d-small {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-family: "Barlow Semi Condensed";
+  font-weight: inherit;
+}
+
+p {
+  font-family: "Barlow";
+  font-weight: 300;
+}
+
+.gradient-border-shadow {
+  position: relative;
+}
+.gradient-border-shadow::after, .gradient-border-shadow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.gradient-border-shadow::before {
+  background: linear-gradient(200deg, #E05976, #9A60C2);
+  z-index: 1;
+}
+.gradient-border-shadow::after {
+  z-index: 2;
+  background-color: #F6F6F6;
+  background-clip: padding-box; /* !importanté */
+  border: solid 3px transparent; /* !importanté */
 }
 
 *,
@@ -470,6 +517,17 @@ body {
   font-size: 21px;
 }
 
+section.module {
+  border: solid 1px red;
+}
+section.module .container {
+  border: solid 1px green;
+}
+
+.module {
+  margin: 50px auto;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
@@ -477,6 +535,8 @@ body {
 
 img {
   width: 100%;
+  display: block;
+  border-radius: 15px;
 }
 
 html {
@@ -485,6 +545,8 @@ html {
 
 body {
   font-family: "Barlow";
+  line-height: 1.5;
+  font-size: 21px;
 }
 
 h1 {
@@ -497,7 +559,8 @@ h1 {
   font-family: "Barlow";
   font-weight: 600;
   display: inline-block;
-  padding: 0.7em 2.5em;
+  padding: 0.55em 2.2em;
+  width: fit-content;
   cursor: pointer;
   position: relative;
   box-sizing: border-box;
@@ -519,14 +582,10 @@ h1 {
   background: linear-gradient(200deg, #E05976, #9A60C2);
 }
 
-.hero h1 {
-  line-height: 1.2;
-  font-family: "Barlow Semi Condensed";
-  font-weight: inherit;
-}
-.hero p {
-  font-family: "Barlow";
-  font-weight: 300;
+.hero .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
 }
 .hero .container {
   display: flex;
@@ -539,6 +598,51 @@ h1 {
 }
 .hero .container .picture-wrapper {
   width: 30%;
+}
+
+.image-text .container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+}
+.image-text .text-wrapper, .image-text .image-wrapper {
+  width: calc(50% - 0.75rem);
+}
+.image-text--image-first .image-wrapper {
+  order: 1;
+}
+.image-text--image-first .text-wrapper {
+  order: 2;
+}
+.image-text--text-first .text-wrapper {
+  order: 1;
+}
+.image-text--text-first .image-wrapper {
+  order: 2;
+}
+.image-text .image-wrapper {
+  position: relative;
+}
+.image-text .image-wrapper .image {
+  display: block;
+  width: 84%;
+  aspect-ratio: 6/4;
+  height: auto;
+}
+.image-text .image-wrapper picture {
+  position: absolute;
+  z-index: 10;
+}
+.image-text .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: unset;
+}
+.image-text .text-wrapper .heading {
+  padding-bottom: 2.5rem;
+}
+.image-text .text-wrapper p:not(:last-child) {
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

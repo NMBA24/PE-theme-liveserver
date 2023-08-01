@@ -22,7 +22,7 @@
   background: $bg-color;
   background-clip: padding-box; /* !importanté */
   border: solid $border transparent; /* !importanté */
-  border-radius: 15px;
+  border-radius: $border-radius;
 
   &:before {
     content: '';
@@ -31,8 +31,37 @@
     z-index: -1;
     margin: -$border; /* !importanté */
     border-radius: inherit; /* !importanté */
-    
     background: linear-gradient(200deg,#E05976, #9A60C2);
   }
 
+}
+
+@mixin gradient-border-shadow($bg-color:inherit){
+  position: relative;
+  $border: 3px;
+  
+  &::after, &::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top:15%;
+    left:15%;
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius;
+  }
+  &::before{
+    background: linear-gradient(200deg,#E05976, #9A60C2);
+    z-index: 1;
+  }
+  &::after{
+    z-index: 2;
+    background-color: $bg-color;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+  }
+}
+
+.gradient-border-shadow{
+  @include gradient-border-shadow($c-bg-basic);
 }

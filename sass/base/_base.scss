@@ -11,12 +11,23 @@ body{
   color:$c-f-black;
   font-size:$fs-d-normal;
 }
+//dev perpose 
+section.module{
+  border: solid 1px red;
+  .container{
+    border: solid 1px green;
+  }
+}
 
+.module{
+  margin: 50px auto;
+}
 .container {
   max-width:1140px;
   margin:auto;
-
 }
 img{
   width: 100%;
+  display: block;
+  border-radius: $border-radius;
 }
