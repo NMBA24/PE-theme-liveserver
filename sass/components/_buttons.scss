@@ -1,6 +1,6 @@
-.btn{
+.btn {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   @include font(semibold);
 
   display: inline-block;
@@ -9,7 +9,5 @@
 
   cursor: pointer;
 
-
-  @include gradient-border($c-bg-basic);
-
+  @include gradient-border-btn($c-bg-basic);
 }

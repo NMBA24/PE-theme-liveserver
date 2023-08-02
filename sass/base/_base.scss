@@ -1,33 +1,48 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
-body{
+body {
   box-sizing: border-box;
   background-color: $c-bg-basic;
-  color:$c-f-black;
-  font-size:$fs-d-normal;
+  color: $c-f-black;
+  font-size: $fs-d-normal;
 }
-//dev perpose 
-section.module{
+//dev perpose
+section.module {
   border: solid 1px red;
-  .container{
+  .container {
     border: solid 1px green;
   }
 }
 
-.module{
-  margin: 50px auto;
+.module {
+  margin: 300px auto;
+  position: relative;
+  z-index: $m-z-index-default;
+  @include font(light, B);
+  &__heading {
+    line-height: 1.2;
+    @include font(inherit, B-SC);
+    font-size: $fs-d-big;
+  }
 }
+
 .container {
-  max-width:1140px;
-  margin:auto;
+  max-width: 1140px;
+  margin: 40px auto;
 }
-img{
+
+img {
   width: 100%;
   display: block;
   border-radius: $border-radius;
+}
+
+ul,
+li {
+  list-style-type: none;
 }

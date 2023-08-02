@@ -1,20 +1,20 @@
 // Localize Font
-$font-path : '../asset/fonts';
-@import '../asset/fonts/barlow-v12-latin/index'; //Barlow
-@import '../asset/fonts/barlow-condensed-v12-latin/index'; //Barlow
-@import '../asset/fonts/barlow-semi-condensed-v15-latin/index'; //Barlow
+$font-path: "../asset/fonts";
+@import "../asset/fonts/barlow-v12-latin/index"; //Barlow
+@import "../asset/fonts/barlow-condensed-v12-latin/index"; //Barlow
+@import "../asset/fonts/barlow-semi-condensed-v15-latin/index"; //Barlow
 // Font variable
-@import 'abstracts/font';
-@import 'abstracts/colors';
-@import 'abstracts/variables';
-@import 'abstracts/mixin';
+@import "abstracts/font";
+@import "abstracts/colors";
+@import "abstracts/variables";
+@import "abstracts/mixin";
 
+@import "base/base";
+@import "base/typography";
 
-@import 'base/base';
-@import 'base/typography';
+@import "components/buttons";
 
-@import 'components/buttons';
-
-@import 'modules/hero';
-@import 'modules/image-text';
-
+@import "modules/hero";
+@import "modules/image-text";
+@import "modules/features";
+@import "modules/blocks";

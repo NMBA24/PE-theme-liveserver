@@ -1,18 +1,25 @@
 html {
   // This defines what 1rem is
   font-size: 16px;
-  // @media only screen and (max-width: $bp-smallfont) {
-  //   font-size: 14px;
-  // }
 }
 body {
-  font-family:'Barlow';
+  font-family: "Barlow";
   line-height: 1.5;
-  font-size:$fs-d-normal;
+  font-size: $fs-d-normal;
 }
 
+h1 {
+  font-size: 48px;
+}
 
-
-h1{
-  font-size:48px;
+.custom-svg-icon-wp {
+  background-image: url("/asset/icons/wp.svg");
+  height: 45px;
+  width: 45px;
+}
+.custom-svg-icon-leaflet {
+  background-image: url("/asset/icons/leaflet.svg");
+  height: 45px;
+  width: 45px;
+  background-size: cover;
 }

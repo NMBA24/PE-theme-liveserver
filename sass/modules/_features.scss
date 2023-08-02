@@ -1,0 +1,52 @@
+.features {
+  color: $c-f-white;
+  padding-top: 130px;
+  background-image: url("/asset/img/feature_bg.svg"); //width="1600" height="1610"
+  height: 1700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: bottom center, 50%, 50%;
+
+  h3.heading {
+    font-size: $fs-d-big;
+  }
+
+  .feature {
+    font-size: $fs-d-small;
+
+    &-wrapper {
+      @include flex(row);
+      row-gap: 40px;
+      justify-content: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    width: 360px;
+
+    .icon {
+      margin-bottom: 25px;
+    }
+    .heading {
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .text {
+      font-weight: 300;
+      line-height: 1.38;
+    }
+
+    @include gradient-border-feature($c-bg-black, $m-z-index-1);
+    .content {
+      padding: 30px 20px;
+    }
+  }
+  @media screen and (max-width: $bp-largest) {
+    .feature-wrapper {
+      justify-content: space-around;
+    }
+    .feature {
+      width: 45%;
+    }
+  }
+}
