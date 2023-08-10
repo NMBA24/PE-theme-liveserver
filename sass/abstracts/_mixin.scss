@@ -41,7 +41,6 @@
   $border: 3px;
 
   position: relative;
-  // z-index: $current-z-index + 3;
 
   & > * {
     position: relative;
@@ -67,6 +66,7 @@
     background-color: $bg-color;
     background-clip: padding-box; /* !importanté */
     border: solid $border transparent; /* !importanté */
+    box-sizing: border-box;
   }
 }
 

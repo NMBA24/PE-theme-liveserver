@@ -29,6 +29,7 @@ section.module {
     @include font(inherit, B-SC);
     font-size: $fs-d-big;
   }
+  max-width: 1600px;
 }
 
 .container {
@@ -45,4 +46,15 @@ img {
 ul,
 li {
   list-style-type: none;
+}
+
+.column-3 {
+  display: flex;
+  &-1 {
+    width: 33.33%;
+  }
+  &-2 {
+    width: 66.66%;
+    padding-left: $column-gap--big;
+  }
 }

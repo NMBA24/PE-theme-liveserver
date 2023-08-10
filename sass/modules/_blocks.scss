@@ -26,12 +26,11 @@
 
     &:not(:last-child)::after {
       content: "";
-      // border: 2px solid black;
       width: 2px;
       height: 100%;
       position: absolute;
       right: -2px;
-      background: linear-gradient(200deg, #e05976, #9a60c2);
+      background: $gradient-default;
     }
     img {
       object-fit: contain;

@@ -8,9 +8,12 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
 
     <!--<link rel="stylesheet" href="css/icon-font.css">-->
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
 
     <title>Page Effect</title>
   </head>
@@ -55,6 +58,81 @@
     </header>
 
     <main>
+      <section class="test module project-slider">
+        <div class="container">
+          <div class="swiper swiperCarousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__title">1. realestatepilot.com</div>
+                  <div class="slide__text">Webentwicklung, Hosting</div>
+                  <div class="slide__image">
+                    <img src="/asset/img/project-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__title">2. realestatepilot.com</div>
+                  <div class="slide__text">Webentwicklung, Hosting</div>
+                  <div class="slide__image">
+                    <img src="/asset/img/project-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__title">3. realestatepilot.com</div>
+                  <div class="slide__text">Webentwicklung, Hosting</div>
+                  <div class="slide__image">
+                    <img src="/asset/img/project-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__title">4. realestatepilot.com</div>
+                  <div class="slide__text">Webentwicklung, Hosting</div>
+                  <div class="slide__image">
+                    <img src="/asset/img/project-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__title">5. realestatepilot.com</div>
+                  <div class="slide__text">Webentwicklung, Hosting</div>
+                  <div class="slide__image">
+                    <img src="/asset/img/project-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__title">6. realestatepilot.com</div>
+                  <div class="slide__text">Webentwicklung, Hosting</div>
+                  <div class="slide__image">
+                    <img src="/asset/img/project-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card slide">
+                  <div class="slide__title">7. realestatepilot.com</div>
+                  <div class="slide__text">Webentwicklung, Hosting</div>
+                  <div class="slide__image">
+                    <img src="/asset/img/project-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
       <section class="module hero">
         <div class="container">
           <div class="content-wrapper">
@@ -209,8 +287,8 @@
         </div>
       </section>
 
-      <section class="module column-3">
-        <div class="container">
+      <section class="module text-features">
+        <div class="container column-3">
           <div class="column-3-1">
             <div class="module__heading">
               <span class="fw-light"> Sed diam nonumy estis eirmod et quo</span>
@@ -231,9 +309,88 @@
               </p>
             </div>
           </div>
-          <div class="column-3-2">hello</div>
+          <div class="column-3-2">
+            <div class="feature">
+              <div class="feature__icon">
+                <img
+                  srcset="
+                    /asset/img/nutzung-1.svg 480w,
+                    /asset/img/nutzung-1.svg 800w
+                  "
+                  sizes="45px"
+                  src="/asset/img/nutzung-1.svg"
+                  alt="Elva dressed as a fairy"
+                />
+              </div>
+              <div class="feature__content">
+                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
+                <p class="text">
+                  ins, Debugging, Pagespeed Optimierung, REST API
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img
+                  srcset="
+                    /asset/img/nutzung-2.svg 480w,
+                    /asset/img/nutzung-2.svg 800w
+                  "
+                  sizes="45px"
+                  src="/asset/img/nutzung-2.svg"
+                  alt="Elva dressed as a fairy"
+                />
+              </div>
+              <div class="feature__content">
+                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
+                <p class="text">
+                  ins, Debugging, Pagespeed Optimierung, REST API
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img
+                  srcset="
+                    /asset/img/nutzung-3.svg 480w,
+                    /asset/img/nutzung-3.svg 800w
+                  "
+                  sizes="45px"
+                  src="/asset/img/nutzung-3.svg"
+                  alt="Elva dressed as a fairy"
+                />
+              </div>
+              <div class="feature__content">
+                <h4 class="heading">Gründliche Planung</h4>
+                <p class="text">
+                  Webentwicklung & Online Marketing werden zusammen gedacht &
+                  gemeinsam realisiert
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img
+                  srcset="
+                    /asset/img/nutzung-4.svg 480w,
+                    /asset/img/nutzung-4.svg 800w
+                  "
+                  sizes="45px"
+                  src="/asset/img/nutzung-4.svg"
+                  alt="Elva dressed as a fairy"
+                />
+              </div>
+              <div class="feature__content">
+                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
+                <p class="text">
+                  ins, Debugging, Pagespeed Optimierung, REST API
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
       <section class="module blocks">
         <div class="container">
           <div class="module__heading">
@@ -306,8 +463,32 @@
           </div>
         </div>
       </section>
+
+      <section class="module project-slider">
+        <div class="container">
+          <div class="module_heading">Kundenprojekte</div>
+          <div class="slide active">
+            <div class="slide__title">realestatepilot.com</div>
+            <div class="slide__text">Webentwicklung, Hosting</div>
+            <div class="slide__image">
+              <img src="/asset/img/project-1.png" alt="" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__title">teamproQ.com</div>
+            <div class="slide__text">Technisches SEO</div>
+            <div class="slide__image">
+              <img src="/asset/img/project-2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer"></footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

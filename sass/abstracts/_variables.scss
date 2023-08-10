@@ -29,3 +29,6 @@ $h-z-index-2: $h-z-index-1 + 1;
 $h-z-index-3: $h-z-index-2 + 1;
 $h-z-index-4: $h-z-index-3 + 1;
 $h-z-index-5: $h-z-index-4 + 1;
+
+// gradient
+$gradient-default: linear-gradient(200deg, #e05976, #9a60c2);
