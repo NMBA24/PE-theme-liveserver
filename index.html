@@ -19,47 +19,322 @@
   </head>
 
   <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>01</span>About Natous</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>02</span>Your benfits</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"
-              ><span>03</span>Popular tours</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span>Stories</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>05</span>Book now</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
     <header class="header">
-      <div class="header__logo-box">
-        <!-- <img src="img/logo-white.png" alt="Logo" class="header__logo"> -->
+      <div class="container">
+        <div class="header__logo-box">
+          <img
+            class="header__logo"
+            srcset="
+              /asset/img/Pageeffect_logo.svg 480w,
+              /asset/img/Pageeffect_logo.svg 800w
+            "
+            src="/asset/img/Pageeffect_logo.svg"
+            sizes="100px"
+            alt="Logo"
+          />
+        </div>
+
+        <input
+          class="hamburger__checkbox"
+          type="checkbox"
+          id="header-navi-toggle"
+        />
+        <label class="hamburger__button" for="header-navi-toggle">
+          <span class="hamburger__icon">&nbsp;</span>
+        </label>
+        <div class="navigation">
+          <div class="navigation__background">&nbsp;</div>
+
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"
+                  ><span>01</span>About Natous</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"
+                  ><span>02</span>Your benfits</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"
+                  ><span>03</span>Popular tours</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>04</span>Stories</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>05</span>Book now</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="test module project-slider">
+      <section class="module hero">
         <div class="container">
+          <div class="content-wrapper">
+            <h1 class="module__heading">
+              >Hi, PAGE EFFECT baut Webseiten und Online Shops mit klarer Linie:
+              <span class="strong">SEO - Besucheranalyse Zielgruppenfokus</span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
+              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr.
+            </p>
+            <a
+              class="btn btn-empty"
+              target=""
+              href="https://terrassendesign.de/grosse-sonderpreisaktion-auf-lamellendaecher-und-terrassendaecher/"
+              >Erfahren Sie mehr</a
+            >
+          </div>
+          <div class="picture-wrapper">
+            <!-- max width 380px, min  width 230px -->
+            <picture>
+              <source
+                sizes="(min-width: 1140px) 440px,
+                            60vw"
+              />
+              <img src="asset/img/Profil.png" alt="Profil photo" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="module image-text text-first">
+        <div class="container">
+          <div class="text-wrapper">
+            <h2 class="module__heading">
+              Kein Blabla, sondern
+              <br />
+              <span class="strong">echte Webkompetenz</span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
+              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr. Lorem ipsum dolor sit amet, consetetur
+              sadipscing dolorem sitear elitr, sed diam nonumy! Lorem ipsum
+              dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit
+              amet, consetetur sadipscing dolorem sitear elitr, sed diam nonumy!
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
+              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr.
+            </p>
+          </div>
+          <div class="image-wrapper">
+            <div class="image gradient-border-shadow">
+              <!-- max-width 461px -->
+              <img
+                src="asset/img/sample6000x400-ratio6x4.png"
+                alt="sample photo 6 x 4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="module image-text image-first bg-black">
+        <div class="container">
+          <div class="text-wrapper">
+            <h2 class="module__heading fs-d-big c-f-red">
+              <span class="fw-light">Kein Blabla, sondern</span><br /><span
+                class="fw-semibold"
+                >echte Webkompetenz</span
+              >
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
+              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr. Lorem ipsum dolor sit amet, consetetur
+              sadipscing dolorem sitear elitr, sed diam nonumy! Lorem ipsum
+              dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit
+              amet, consetetur sadipscing dolorem sitear elitr, sed diam nonumy!
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
+              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr.
+            </p>
+            <a
+              class="btn btn-empty"
+              target=""
+              href="https://terrassendesign.de/grosse-sonderpreisaktion-auf-lamellendaecher-und-terrassendaecher/"
+              >Erfahren Sie mehr</a
+            >
+          </div>
+          <div class="image-wrapper">
+            <div class="image gradient-border-shadow">
+              <img
+                src="asset/img/sample6000x400-ratio6x4.png"
+                alt="sample photo 6 x 4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="module features bg-black">
+        <div class="container">
+          <h3 class="module__heading">
+            Unsere<br /><span class="strong">Leistungen</span>
+          </h3>
+          <div class="module__content">
+            <div class="feature">
+              <div class="feature__icon">
+                <img
+                  srcset="
+                    /asset/icons/leaflet.svg 480w,
+                    /asset/icons/leaflet.svg 800w
+                  "
+                  sizes="45px"
+                  src="/asset/ions/leaflet.svg"
+                  alt="Elva dressed as a fairy"
+                />
+              </div>
+              <div class="feature__content">
+                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
+                <p class="text">
+                  ins, Debugging, Pagespeed Optimierung, REST API
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img
+                  srcset="/asset/icons/wp.svg 480w, /asset/icons/wp.svg 800w"
+                  sizes="45px"
+                  src="/asset/ions/wp.svg"
+                  alt="Elva dressed as a fairy"
+                />
+              </div>
+              <div class="feature__content">
+                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
+                <p class="text">
+                  ins, Debugging, Pagespeed Optimierung, REST API
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img
+                  srcset="/asset/icons/wp.svg 480w, /asset/icons/wp.svg 800w"
+                  sizes="45px"
+                  src="/asset/ions/wp.svg"
+                  alt="Elva dressed as a fairy"
+                />
+              </div>
+              <div class="feature__content">
+                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
+                <p class="text">
+                  Custom Themes, Custom Plugins, Debugging, Pagespeed
+                  Optimierung, REST APICustom Themes, Custom Plugins, Debugging,
+                  Pagespeed Optimierung, REST API
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <img
+                  srcset="/asset/icons/wp.svg 480w, /asset/icons/wp.svg 800w"
+                  sizes="45px"
+                  src="/asset/ions/wp.svg"
+                  alt="Elva dressed as a fairy"
+                />
+              </div>
+              <div class="feature__content">
+                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
+                <p class="text">
+                  Custom Themes, Custom Plugins, Debugging, Pagespeed
+                  Optimierung, REST API
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="module blocks long-block">
+        <div class="container">
+          <div class="module__heading">
+            <span class="fw-light">Zahlen & Fakten</span>
+          </div>
+          <div class="module__content">
+            <ul class="elements">
+              <li>
+                <div class="number">10</div>
+                <div class="text">Jahre Berufserfahrung</div>
+              </li>
+              <li>
+                <div class="number">7</div>
+                <div class="text">Jahre Berufserfahrung</div>
+              </li>
+              <li>
+                <div class="number">59</div>
+                <div class="text">Jahre Berufserfahrung</div>
+              </li>
+              <li>
+                <div class="number">20</div>
+                <div class="text">Jahre Berufserfahrung</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="module image-text image-first bg-black">
+        <div class="container">
+          <div class="text-wrapper">
+            <h2 class="module__heading fs-d-big c-f-red">
+              <span class="fw-light">Kein Blabla, sondern</span><br /><span
+                class="fw-semibold"
+                >echte Webkompetenz</span
+              >
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
+              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr. Lorem ipsum dolor sit amet, consetetur
+              sadipscing dolorem sitear elitr, sed diam nonumy! Lorem ipsum
+              dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit
+              amet, consetetur sadipscing dolorem sitear elitr, sed diam nonumy!
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
+              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
+              sadipscing elitr.
+            </p>
+            <a
+              class="btn btn-empty"
+              target=""
+              href="https://terrassendesign.de/grosse-sonderpreisaktion-auf-lamellendaecher-und-terrassendaecher/"
+              >Erfahren Sie mehr</a
+            >
+          </div>
+          <div class="image-wrapper">
+            <div class="image gradient-border-shadow">
+              <img
+                src="asset/img/sample6000x400-ratio6x4.png"
+                alt="sample photo 6 x 4"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="module project-slider">
+        <div class="container">
+          <div class="module__heading">Kundenprojekte</div>
           <div class="swiper swiperCarousel">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -133,136 +408,6 @@
         </div>
       </section>
 
-      <section class="module hero">
-        <div class="container">
-          <div class="content-wrapper">
-            <h1 class="module__heading">
-              <span class="fw-light"
-                >Hi, PAGE EFFECT baut Webseiten und Online Shops mit klarer
-                Linie:</span
-              >
-              <span class="fw-semibold"
-                >SEO - Besucheranalyse Zielgruppenfokus</span
-              >
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
-              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
-              sadipscing elitr.
-            </p>
-            <a
-              class="btn btn-empty"
-              target=""
-              href="https://terrassendesign.de/grosse-sonderpreisaktion-auf-lamellendaecher-und-terrassendaecher/"
-              >Erfahren Sie mehr</a
-            >
-          </div>
-          <div class="picture-wrapper">
-            <picture>
-              <source
-                sizes="(min-width: 1140px) 440px,
-                            60vw"
-              />
-              <img src="asset/img/Profil.png" alt="Profil photo" />
-            </picture>
-          </div>
-        </div>
-      </section>
-
-      <section class="module image-text image-text--image-first">
-        <div class="container">
-          <div class="text-wrapper">
-            <h2 class="module__heading fs-d-big">
-              <span class="fw-light">Kein Blabla, sondern</span><br /><span
-                class="fw-semibold"
-                >echte Webkompetenz</span
-              >
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
-              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
-              sadipscing elitr. Lorem ipsum dolor sit amet, consetetur
-              sadipscing dolorem sitear elitr, sed diam nonumy! Lorem ipsum
-              dolor sit amet, consetetur sadipscing elitr. Lorem ipsum dolor sit
-              amet, consetetur sadipscing dolorem sitear elitr, sed diam nonumy!
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing dolorem sitear
-              elitr, sed diam nonumy! Lorem ipsum dolor sit amet, consetetur
-              sadipscing elitr.
-            </p>
-          </div>
-          <div class="image-wrapper">
-            <div class="image gradient-border-shadow">
-              <img
-                src="asset/img/sample6000x400-ratio6x4.png"
-                alt="sample photo 6 x 4"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="module features">
-        <div class="container curv-black-background">
-          <h3 class="module__heading">
-            Unsere<br /><span class="fw-semibold">Leistungen</span>
-          </h3>
-          <div class="feature-wrapper">
-            <div class="feature">
-              <div class="content">
-                <div class="icon custom-svg-icon-wp"></div>
-                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
-                <p class="text">
-                  ins, Debugging, Pagespeed Optimierung, REST API
-                </p>
-              </div>
-            </div>
-            <div class="feature">
-              <div class="content">
-                <div class="icon custom-svg-icon-wp"></div>
-                <h4 class="heading">e Entwicklung</h4>
-                <p class="text">
-                  Custom Themes, Custom Plugins, Debugging, Pagespeed
-                  Optimierung, REST API
-                </p>
-              </div>
-            </div>
-            <div class="feature">
-              <div class="content">
-                <div class="icon custom-svg-icon-leaflet"></div>
-                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
-                <p class="text">
-                  Custom Themes, Custom Plugins, Debugging, Pagespeed
-                  Optimierung, REST APICustom Themes, Custom Plugins, Debugging,
-                  Pagespeed Optimierung, REST API
-                </p>
-              </div>
-            </div>
-            <div class="feature">
-              <div class="content">
-                <div class="icon custom-svg-icon-wp"></div>
-                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
-                <p class="text">
-                  Custom Themes, Custom Plugins, Debugging, Pagespeed
-                  Optimierung, REST API
-                </p>
-              </div>
-            </div>
-            <div class="feature">
-              <div class="content">
-                <div class="icon custom-svg-icon-wp"></div>
-                <h4 class="heading">Wordpress & WooCommerce Entwicklung</h4>
-                <p class="text">
-                  Custom Themes, Custom Plugins, Debugging, Pagespeed
-                  Optimierung, REST API
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="module blocks">
         <div class="container">
           <div class="module__heading">
@@ -291,8 +436,8 @@
         <div class="container column-3">
           <div class="column-3-1">
             <div class="module__heading">
-              <span class="fw-light"> Sed diam nonumy estis eirmod et quo</span>
-              <span class="fw-semibold"> Kundennutzen</span>
+              Sed diam nonumy estis eirmod et quo
+              <span class="strong"> Kundennutzen</span>
             </div>
             <div class="module__textbox">
               <p>
@@ -463,29 +608,55 @@
           </div>
         </div>
       </section>
-
-      <section class="module project-slider">
-        <div class="container">
-          <div class="module_heading">Kundenprojekte</div>
-          <div class="slide active">
-            <div class="slide__title">realestatepilot.com</div>
-            <div class="slide__text">Webentwicklung, Hosting</div>
-            <div class="slide__image">
-              <img src="/asset/img/project-1.png" alt="" />
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide__title">teamproQ.com</div>
-            <div class="slide__text">Technisches SEO</div>
-            <div class="slide__image">
-              <img src="/asset/img/project-2.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer bg-black">
+      <div class="container column-2">
+        <div class="info left">
+          <div class="company-name fw-semibold fs-d-normal">
+            Page Effekt e. K.
+          </div>
+          <div class="company-detail fs-d-small">
+            <p class="owner">Inhaber: Thomas Pondelek</p>
+            <p class="email">info@page-effekt.de</p>
+            <p class="address">Kleinwernfeld 8, 97737 Gemünden, Deutschland</p>
+            <p class="register-number">
+              Handelsregister: Amstgericht Würzburg HRA 7868
+            </p>
+            <p class="ust">USt-IdNr: DE282624108</p>
+          </div>
+        </div>
+        <div class="navigation right">
+          <div class="navigation__background">&nbsp;</div>
+
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"
+                  ><span>01</span>About Natous</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"
+                  ><span>02</span>Your benfits</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"
+                  ><span>03</span>Popular tours</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>04</span>Stories</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>05</span>Book now</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js"></script>
     <script src="./node_modules/swiper/swiper-bundle.js"></script>

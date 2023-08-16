@@ -27,4 +27,33 @@
       background: $gradient-default;
     }
   }
+  @media screen and (max-width: $bp-tablet) {
+    .container {
+      flex-direction: column;
+      .module__heading {
+        text-align: center;
+      }
+      & > * {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    .feature {
+      width: 100%;
+      @include flex(row, $column-gap);
+      align-items: center;
+      padding: 20px 30px;
+      &__icon {
+        flex-shrink: 0;
+        display: flex;
+        margin-bottom: 0px;
+      }
+      &__content {
+        .heading {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
 }
