@@ -4,6 +4,9 @@
     width: 100%;
     overflow: hidden;
   }
+  .module__heading {
+    text-align: center;
+  }
   .slide {
     width: 560px;
     @media screen and (max-width: $bp-tablet) {

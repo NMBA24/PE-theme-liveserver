@@ -49,7 +49,7 @@
       @include flex(column, $row-gap--big);
       .image-wrapper {
         margin: auto;
-        transform: translateX(10vw);
+        transform: translateX(3vw);
         width: unset;
         .image {
           width: 448px;

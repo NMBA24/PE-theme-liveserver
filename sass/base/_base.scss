@@ -36,7 +36,7 @@ section.module {
   max-width: 1140px;
   margin: 40px auto;
   @media screen and (max-width: 1250px) {
-    padding: 0 3%;
+    padding: 0 5%;
   }
 }
 
@@ -54,6 +54,8 @@ li {
   background-color: $c-bg-black;
 }
 
-p:not(:last-child) {
-  margin-bottom: 2rem;
+.text-box {
+  p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
